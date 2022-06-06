@@ -59,7 +59,8 @@ h1 {
 
 .service {
   background-color: #fff;
-  margin: 0 30px 30px 0;
+  margin-bottom: 80px;
+  width: 32%;
 }
 
 
@@ -74,11 +75,15 @@ h1 {
 
 .contents p {
   margin: 10px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 400px) {
+
+  .wrap {
+    padding-bottom: 60px;
+  }
 
   .contents {
     display: block;
