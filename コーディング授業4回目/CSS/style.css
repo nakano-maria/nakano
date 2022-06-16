@@ -21,8 +21,8 @@ dd {
   line-height: 1;
   color: #4f260b;
   font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+    "MS 明朝", serif;
   font-feature-settings: "palt";
 }
 
@@ -74,9 +74,10 @@ img {
 
 .pc_nav ul li {
   width: 104px;
-  margin-right: 20px;
+  margin-right: 55px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
     "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   color: #fff;
   text-align: center;
@@ -92,8 +93,11 @@ img {
 
 .main {
   background-color: #E8D9BF;
-  text-align: center;
   margin: auto;
+}
+
+.title {
+  text-align: center;
 }
 
 .lead {
@@ -105,7 +109,8 @@ img {
 .title h2 {
   font-size: 82px;
   line-height: 1.14;
-  margin-bottom: 44.25px;
+  margin-bottom: 44.3px;
+  font-weight: normal;
 }
 
 .title p {
@@ -148,21 +153,26 @@ img {
   line-height: 1.39;
 }
 
-.text {
+.about_text {
   font-size: 16px;
   line-height: 1.6;
 }
 
+/* menu */
+
+.menu {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .menu_logo {
-  width: 139.5px;
-  margin: 100px 0 46.5px 0;
+  width: 140px;
+  margin: 103px auto 49px;
 }
 
 .menu_wrap {
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
-  margin: auto;
   position: relative;
 }
 
@@ -214,9 +224,10 @@ img {
   line-height: 1.47;
 }
 
+/* GALLERY */
 .gallery_logo {
-  margin: 94.83px 0 24.8px 0;
-  width: 234.8px;
+  margin: 99px auto 25px;
+  width: 245px;
 }
 
 .gallery_img {
@@ -224,9 +235,11 @@ img {
   max-width: 1000px;
 }
 
+
+
 .event_logo {
-  width: 166.7px;
-  margin: 72px 0 39.4px 0;
+  width: 167px;
+  margin: 72px auto 39.4px;
 }
 
 .event_wrap {
@@ -236,15 +249,19 @@ img {
   height: 198.6px;
   margin: auto;
   font-size: 23px;
-  text-align: center;
 }
 
 
 .event_list {
   display: inline-block;
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 20%;
 }
 
-
+.event_list li {
+  margin-bottom: 25px;
+}
 
 .date {
   padding-right: 20px;
@@ -258,28 +275,55 @@ img {
 
 .access_logo {
   width: 206px;
-  margin-top: 79.7px;
-  margin-bottom: 46.5px;
+  margin: 80px auto 47px;
 }
 
 .map iframe {
   width: 1920px;
-  height: 471.2641px;
+  height: 471px;
 }
 
-footer {
-  height: 391.9311px;
-  position: relative;
+/* footer */
+
+.footer_wrap {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  padding: 86px 0 82px;
+  background-color: #fff;
+  /* position: relative; */
 }
 
 .footer_logo {
-  width: 226.7686px;
-
+  width: 227px;
+  margin-top: 83px;
 }
 
-.top_boton {
+
+.footer_information {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 83px;
+  margin-left: 6.5%;
+  color: #000000;
+}
+
+.footer_information p {
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+.top_button {
   width: 125px;
   position: fixed;
-  right: 48px;
-  bottom: 233px;
+  right: 50px;
+  bottom: 230px;
+}
+
+
+.footer_text {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 16px;
+  color: #000000;
 }
