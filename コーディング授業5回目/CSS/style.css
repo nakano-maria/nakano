@@ -1,0 +1,641 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #4f260b;
+  font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+    "MS 明朝", serif;
+  font-feature-settings: "palt";
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+
+/* ヘッダー */
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6.53% 0 2.51%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header_logo {
+  width: 226.76px;
+
+}
+
+.pc_nav ul {
+  display: flex;
+}
+
+.pc_nav ul li {
+  width: 104px;
+  margin-right: 55px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.pc_nav ul li:last-child {
+  margin-right: 0;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.main {
+  background-color: #E8D9BF;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.lead {
+  font-size: 30px;
+  padding-top: 112px;
+  padding-bottom: 53.8px;
+}
+
+.title h2 {
+  font-size: 82px;
+  line-height: 1.14;
+  margin-bottom: 44.3px;
+  font-weight: normal;
+}
+
+.title p {
+  font-size: 23px;
+  line-height: 1.65;
+  margin-bottom: 100px;
+  letter-spacing: 0.1em;
+}
+
+
+
+.aboutus_logo_sp {
+  display: none;
+}
+
+.about_wrap {
+  margin: 0 auto 100px;
+  max-width: 1000px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_wrap picture img {
+  border-radius: 0 0 60px 0;
+  margin-right: 79px;
+}
+
+
+.about_text {
+  width: 40%;
+  text-align: left;
+}
+
+.aboutus_logo_pc {
+  width: 264px;
+}
+
+.about_text h4 {
+  font-size: 44px;
+  line-height: 1.39;
+  font-weight: lighter;
+}
+
+.about_text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+
+/* menu */
+
+.menu {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.menu_logo {
+  width: 140px;
+  margin: 0 auto 49px;
+}
+
+.menu_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_wrap img {
+  border-radius: 0 50px 0 0;
+}
+
+
+.menu_list {
+  width: 30%;
+}
+
+
+
+.menu_list p {
+  color: #D30202;
+  font-size: 38px;
+  margin-top: -18px;
+  margin-left: 13px;
+}
+
+
+.menu_text {
+  margin-top: 23px;
+  font-size: 17px;
+  text-align: left;
+  line-height: 1.47;
+}
+
+/* GALLERY */
+.gallery_logo {
+  margin: 98px auto 26px;
+  width: 245px;
+}
+
+.gallery_wrap {
+  display: flex;
+  width: 100%;
+}
+
+.gallery picture {
+  width: 20%;
+}
+
+.gallery_img {
+  display: flex;
+  width: 20%;
+}
+
+/* event */
+.event {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.event_logo {
+  width: 167px;
+  margin: 70px auto 39px;
+}
+
+.event_wrap {
+  border: 3.6843px solid #4F260B;
+  background-color: #FFFFFF;
+  font-size: 23px;
+  padding: 45px 0 40px;
+  text-align: center;
+}
+
+
+.event_list {
+  display: inline-block;
+  text-align: left;
+}
+
+.event_list li {
+  margin-bottom: 25px;
+}
+
+.event_list li:last-child {
+  margin-bottom: 0;
+}
+
+.date {
+  padding-right: 20px;
+}
+
+.text {
+  text-decoration: underline;
+  font-size: 23px;
+}
+
+.access_logo {
+  width: 206px;
+  margin: 80px auto 47px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 471px;
+}
+
+/* footer */
+footer {
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.footer_wrap {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  padding: 80px 0 82px;
+
+}
+
+.footer_logo {
+  width: 227px;
+}
+
+
+.footer_information {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 68px;
+}
+
+.footer_information p {
+  margin-bottom: 24px;
+  color: #000000;
+}
+
+
+.footer_text {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.top_button {
+  width: 125px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+.sp_nav {
+  display: none;
+
+}
+
+.btn {
+  display: none;
+}
+
+@media screen and (max-width:1100px) {
+  .pc_nav {
+    display: none;
+  }
+
+  .btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    z-index: 100;
+  }
+
+  .btn span {
+    background: #fff;
+    width: 33px;
+    height: 3px;
+    display: block;
+    position: relative;
+    top: 10px;
+    transition: 0.3s;
+  }
+
+  .btn span::before,
+  .btn span::after {
+    content: '';
+    width: 33px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  .btn span::before {
+    bottom: 10px;
+  }
+
+  .btn span::after {
+    top: 10px;
+  }
+
+  .open span {
+    background: transparent;
+  }
+
+  .open span::before {
+    transform: rotate(45deg);
+    bottom: 0px;
+
+  }
+
+  .open span::after {
+    transform: rotate(135deg);
+    top: 0px;
+  }
+
+  .sp_nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .sp_nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .sp_nav li {
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 0;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  }
+
+  .lead {
+    font-size: 4vw;
+  }
+
+  .main h2 {
+    font-size: 8.7vw;
+  }
+
+
+  .abouto_text p {
+    font-size: 2.8vw;
+  }
+
+
+}
+
+@media screen and (max-width:767px) {
+
+  .header_logo {
+    width: 182px;
+  }
+
+
+  .lead {
+    font-size: 17px;
+    padding-top: 40px;
+    padding-bottom: 26px;
+  }
+
+  .title h2 {
+    font-size: 38px;
+    margin-bottom: 26px;
+  }
+
+  .title p {
+    font-size: 4vw;
+    line-height: 1.875;
+    padding: 0 10px;
+    margin-bottom: 68px;
+  }
+
+
+  .about {
+    display: block;
+    padding: 0 20px;
+  }
+
+
+
+  .about_wrap {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0px;
+  }
+
+  .about_wrap picture img {
+    width: 100%;
+    border-radius: 0px 0px;
+    margin-right: 0px;
+  }
+
+  .aboutus_logo_pc {
+    display: none;
+  }
+
+  .aboutus_logo_sp {
+    display: block;
+    width: 154px;
+    margin: auto;
+    padding-bottom: 17px;
+  }
+
+  .about_text {
+    width: 100%;
+  }
+
+  .about_text h4 {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 30px;
+  }
+
+  .about_text p {
+    font-size: 4vw;
+    line-height: 1.75;
+    margin-bottom: 60px;
+  }
+
+  .menu {
+    padding: 0 35px;
+  }
+
+  .menu_logo {
+    width: 83px;
+    margin: 0 auto 23px;
+  }
+
+  .menu_wrap {
+    display: block;
+
+    margin: auto;
+  }
+
+  .menu_list {
+    /* margin: auto; */
+    width: 100%;
+  }
+
+  .menu_text {
+    margin-bottom: 73px;
+
+  }
+
+
+
+  .gallery_logo {
+    margin: 95px auto 21px;
+    width: 136px;
+  }
+
+  .gallery_wrap {
+    display: block;
+  }
+
+  .gallery_img {
+    display: none;
+  }
+
+
+
+
+  .gallery_wrap picture img {
+    width: 100%;
+    background-size: cover;
+  }
+
+
+  .event {
+    padding: 0 20px;
+  }
+
+  .event_wrap {
+    font-size: 16px;
+    padding: 25px 0 17px 29px;
+    text-align: center;
+  }
+
+
+  .event_logo {
+    margin: 34px auto 19px;
+    width: 96px;
+  }
+
+
+  .event_list {
+    display: block;
+  }
+
+
+
+  .text {
+    font-size: 4vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+
+  .access_logo {
+    width: 120px;
+    margin: 33px auto 11px;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 191px;
+  }
+
+  .footer_wrap {
+    display: block;
+    margin: auto;
+    padding: 0px 0px 0 23px;
+  }
+
+
+  .footer_logo {
+    width: 221px;
+    padding: 49px 0 37px;
+  }
+
+  .footer_information {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 0px;
+    padding-bottom: 50px;
+  }
+
+  .footer_information p {
+    margin-bottom: 16px;
+    color: #000000;
+  }
+
+  .footer_text {
+    margin-bottom: 33px;
+  }
+
+
+  .top_button {
+    width: 100px;
+    position: fixed;
+    right: 65px;
+    bottom: 15px;
+  }
+
+
+
+
+
+}
