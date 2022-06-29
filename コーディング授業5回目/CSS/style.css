@@ -118,6 +118,7 @@ img {
   line-height: 1.65;
   margin-bottom: 100px;
   letter-spacing: 0.1em;
+  text-align: center;
 }
 
 
@@ -420,16 +421,23 @@ footer {
   }
 
   .lead {
-    font-size: 4vw;
+    font-size: 1.57w;
   }
 
-  .main h2 {
-    font-size: 8.7vw;
+  .title h2 {
+    font-size: 7w;
   }
 
+  .title p {
+    font-size: 2vw;
+  }
+
+  .abouto_text h4 {
+    font-size: 9.57vw;
+  }
 
   .abouto_text p {
-    font-size: 2.8vw;
+    font-size: 1.4545vw;
   }
 
 
@@ -437,24 +445,29 @@ footer {
 
 @media screen and (max-width:767px) {
 
+  .header_wrap {
+    padding-right: 0%;
+
+  }
+
   .header_logo {
     width: 182px;
   }
 
 
   .lead {
-    font-size: 17px;
+    font-size: 4.5vw;
     padding-top: 40px;
     padding-bottom: 26px;
   }
 
   .title h2 {
-    font-size: 38px;
+    font-size: 10.1vw;
     margin-bottom: 26px;
   }
 
   .title p {
-    font-size: 4vw;
+    font-size: 4.26vw;
     line-height: 1.875;
     padding: 0 10px;
     margin-bottom: 68px;
@@ -463,15 +476,13 @@ footer {
 
   .about {
     display: block;
-    padding: 0 20px;
+    padding: 0px;
   }
 
 
 
   .about_wrap {
     display: block;
-    margin: 0 auto;
-    width: 100%;
     padding: 0 0px;
   }
 
@@ -493,7 +504,8 @@ footer {
   }
 
   .about_text {
-    width: 100%;
+    width: 90%;
+    padding: 0 20px;
   }
 
   .about_text h4 {
@@ -503,7 +515,7 @@ footer {
   }
 
   .about_text p {
-    font-size: 4vw;
+    font-size: 16px;
     line-height: 1.75;
     margin-bottom: 60px;
   }
@@ -519,18 +531,15 @@ footer {
 
   .menu_wrap {
     display: block;
-
     margin: auto;
   }
 
   .menu_list {
-    /* margin: auto; */
     width: 100%;
   }
 
   .menu_text {
     margin-bottom: 73px;
-
   }
 
 
@@ -562,7 +571,6 @@ footer {
   }
 
   .event_wrap {
-    font-size: 16px;
     padding: 25px 0 17px 29px;
     text-align: center;
   }
@@ -579,12 +587,18 @@ footer {
   }
 
 
+  .date {
+    font-size: 16px;
+  }
+
+
 
   .text {
-    font-size: 4vw;
+    display: block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-size: 16px;
   }
 
 
@@ -633,8 +647,6 @@ footer {
     right: 65px;
     bottom: 15px;
   }
-
-
 
 
 
