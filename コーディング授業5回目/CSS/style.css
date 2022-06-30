@@ -49,6 +49,9 @@ img {
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* ヘッダー */
 .header_wrap {
@@ -167,7 +170,7 @@ img {
 
 /* menu */
 
-.menu {
+#menu {
   max-width: 1000px;
   margin: auto;
   padding: 0 10px;
@@ -272,12 +275,12 @@ img {
   font-size: 23px;
 }
 
-.access_logo {
+.access-logo {
   width: 206px;
   margin: 80px auto 47px;
 }
 
-.map iframe {
+#map iframe {
   width: 100%;
   height: 471px;
 }
@@ -345,7 +348,7 @@ footer {
     display: block;
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 17px;
     right: 10px;
     height: 30px;
     z-index: 100;
@@ -520,7 +523,7 @@ footer {
     margin-bottom: 60px;
   }
 
-  .menu {
+  #menu {
     padding: 0 35px;
   }
 
@@ -602,12 +605,12 @@ footer {
   }
 
 
-  .access_logo {
+  .access-logo {
     width: 120px;
     margin: 33px auto 11px;
   }
 
-  .map iframe {
+  #map iframe {
     width: 100%;
     height: 191px;
   }
@@ -644,7 +647,7 @@ footer {
   .top_button {
     width: 100px;
     position: fixed;
-    right: 65px;
+    right: 15px;
     bottom: 15px;
   }
 
