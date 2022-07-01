@@ -213,7 +213,7 @@ html {
 }
 
 /* GALLERY */
-.gallery_logo {
+#gallery_logo {
   margin: 98px auto 26px;
   width: 245px;
 }
@@ -233,7 +233,7 @@ html {
 }
 
 /* event */
-.event {
+#event {
   max-width: 1000px;
   margin: auto;
   padding: 0 10px;
@@ -547,7 +547,7 @@ footer {
 
 
 
-  .gallery_logo {
+  #gallery_logo {
     margin: 95px auto 21px;
     width: 136px;
   }
@@ -569,7 +569,7 @@ footer {
   }
 
 
-  .event {
+  #event {
     padding: 0 20px;
   }
 
