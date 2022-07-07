@@ -6,8 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
   <link rel="stylesheet" href="CSS/style.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 </head>
 
 <body>
@@ -71,6 +78,12 @@
         <picture>
           <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
           <img src="images/pc_first-100.jpg" alt="カフェの様子">
+        </picture>
+      </li>
+      <li>
+        <picture>
+          <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+          <img src="images/slider_2.jpg" alt="カフェの様子">
         </picture>
       </li>
 
@@ -152,19 +165,25 @@
       <h3 id="gallery_logo"><img src="images/gallery@2x.png" alt="galleryのロゴ">
       </h3>
 
-      <div class="gallery_wrap">
 
-        <picture>
-          <source srcset="images/mobile_gallery-100.jpg" media="(max-width:767px)">
-          <img src="images/pc_gallary_03-100.jpg" alt="無機質なカフェ">
-        </picture>
-        <div class="gallery_img">
-          <img src="images/pc_gallary_05-100.jpg" alt="カフェで過ごす人々">
-          <img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆">
-          <img src="images/pc_gallary_02-100.jpg" alt="カフェ店内">
-          <img src="images/pc_gallary_01-100.jpg" alt="ラテアート">
-        </div>
-      </div>
+
+      <ul class="gallery_wrap">
+        <li>
+          <picture>
+            <source srcset="images/mobile_gallery-100.jpg" media="(max-width:767px)">
+            <img src="images/pc_gallary_03-100.jpg" alt="無機質なカフェ">
+          </picture>
+        </li>
+
+        <li>
+          <img class="gallery_img" src="images/pc_gallary_05-100.jpg" alt="カフェで過ごす人々">
+        </li>
+        <li> <img class="gallery_img" src="images/pc_gallary_04-100.jpg" alt="コーヒー豆"></li>
+        <li> <img class="gallery_img" src="images/pc_gallary_02-100.jpg" alt="カフェ店内"></li>
+        <li> <img class="gallery_img" src="images/pc_gallary_01-100.jpg" alt="ラテアート"></li>
+        <li><img class="gallery_img" src="images/pc_gallary_01-100.jpg" alt="ラテアート"></li>
+      </ul>
+
     </section>
 
 
@@ -214,10 +233,33 @@
 
   <script>
     $(function () {
-      $('.btn,sp_nav li a').click(function () {
+      $('.btn,sp_nav a ').click(function () {
         $('.sp_nav').fadeToggle();
         $('.btn').toggleClass('open');
       });
+
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false
+      });
+
+      $('.gallery_wrap').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        Infinity: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          },
+        },],
+      });
+
     });
 
   </script>

@@ -64,6 +64,7 @@ html {
   left: 0;
   width: 100%;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .header_logo {
@@ -94,6 +95,28 @@ html {
   width: 100%;
 }
 
+/* スライダー調整 */
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff
+}
+
+.slick-dots li button:before {
+  color: #fff
+}
+
+
+
+
+
+/* main */
 .main {
   background-color: #E8D9BF;
   margin: auto;
@@ -221,16 +244,62 @@ html {
 .gallery_wrap {
   display: flex;
   width: 100%;
+  overflow: hidden;
 }
 
-.gallery picture {
-  width: 20%;
+/* .gallery picture {
+  width: 20%; 
+} */
+
+/* .gallery_img {
+  display: flex; 
+   width: 20%; 
+} */
+
+/* スライダー矢印調整 */
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
 }
 
-.gallery_img {
-  display: flex;
-  width: 20%;
+.slick-next::after,
+.slick-prev::after {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
 }
+
+
+/* 右矢印 */
+.slick-next {
+  right: 0 !important;
+  right: 22% !important;
+  transform: rotate(45deg);
+}
+
+/* 左矢印 */
+.slick-prev {
+  left: 0 !important;
+  left: 22% !important;
+  transform: rotate(225deg);
+  /* 矢印を画像の上に持ってくる */
+  z-index: 100;
+}
+
+
+
+
+
+
 
 /* event */
 #event {
@@ -338,6 +407,11 @@ footer {
 .btn {
   display: none;
 }
+
+
+
+
+
 
 @media screen and (max-width:1100px) {
   .pc_nav {
@@ -558,8 +632,19 @@ footer {
 
   .gallery_img {
     display: none;
+    width: 100%;
   }
 
+  /* スライダー調整 */
+  /* 右矢印 */
+  .slick-next {
+    right: 20px !important;
+  }
+
+  /* 左矢印 */
+  .slick-prev {
+    left: 20px !important;
+  }
 
 
 
