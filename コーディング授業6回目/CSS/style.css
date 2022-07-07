@@ -271,6 +271,7 @@ html {
 
 .slick-next::after,
 .slick-prev::after {
+  display: block;
   width: 13px;
   height: 13px;
   border-top: 3px solid #fff;
