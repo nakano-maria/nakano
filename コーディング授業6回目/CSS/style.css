@@ -554,12 +554,14 @@ footer {
   .about {
     display: block;
     padding: 0px;
+    width: 100%;
   }
 
 
 
   .about_wrap {
     display: block;
+    width: 100%;
     padding: 0 0px;
   }
 
